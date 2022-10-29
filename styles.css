@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #1D2123;
+    font-size: 14px;
+    color: #fff;
+}
+
+.search {
+    background-color: #1A1E1F;
+    color: #fff;
+    border-radius: 30px;
+    width: 60%;
+    margin-left: 6%;
+    border: none;
+}
+
+.search:active {
+    border: none;
+}
+
+.container-fluid {
+    min-height: 100vh;
+}
+
+.icon-list {
+    background-color: #1A1E1F;
+    border-radius: 30px;
+}
+
+.card {
+    background-color: #609EAF;
+    border-radius: 70px;
+    width: 60%;
+}
+
+.charts-list {
+    background-color: #1A1E1F;
+    border-radius: 20px;
+}
+
+.charts-details p:nth-child(2) {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.releases {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 10%;
+    width: 85%;
+}
+
+.scroll {
+    overflow-x: scroll;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.player{
+    /* background-color: grey; */
+    box-shadow: 0px -25px 100px rgba(16, 16, 16, 0.51);
+}
+
+.btn-yellow {
+    background-color: #FACD66;
+    color: #000;
+    border-color: #FACD66;
+}
+
+.btn-yellow:hover {
+    background-color: #FACD66;
+    opacity: 0.9;
+    color: #000;
+    border-color: #FACD66;
+}
+
+.btn-yellow:focus {
+    background-color: #FACD66;
+    color: #000;
+}
+
+.btn-outline-yellow {
+    border-color: #FACD66;
+    color: #FACD66;
+}
+
+.btn-outline-yellow:hover {
+    background-color: #FACD66;
+    border-color: #FACD66;
+    color: #000;
+}
+
+.btn-outline-yellow:focus {
+    border-color: #FACD66;
+    color: #000;
+}
+
+/* button color and outline #FACD66 */
