@@ -125,10 +125,6 @@ p {
     }
 }
 
-.card2 {
-    /* display: none; */
-}
-
 .charts {
     width: 30%;
 }
@@ -167,7 +163,7 @@ p {
     color: #000;
     border-color: #FACD66;
     border-radius: 20px;
-    padding: 1.5% 2.5%;
+    padding: 0.5% 1%;
 }
 
 .btn-yellow:hover {
@@ -187,7 +183,7 @@ p {
     border-color: #FACD66;
     color: #FACD66;
     border-radius: 20px;
-    padding: 1.5% 2.5%;
+    padding: 0.5% 1%;
 }
 
 .btn-outline-yellow:hover {
@@ -229,6 +225,10 @@ p {
     transition: 0.7s;
 }
 
+.collection {
+    margin-left: 9%;
+}
+
 
 /* Media queries */
 
@@ -241,8 +241,14 @@ p {
 @media (max-width: 992px) {
 
     body {
-        padding: 7%;
+        padding: 5% 2%;
         font-size: 14px;
+    }
+
+    .search {
+        width: 350px;
+        padding: 1% 2%;
+        /* border: 3px solid #ccc; */
     }
     
     .nav-pc {
@@ -264,7 +270,7 @@ p {
     }
 
     .charts img {
-        width: 21%;
+        /* width: 21%; */
     }
 
     .charts-list {
@@ -278,4 +284,5 @@ p {
     .releases {
         margin: auto;
     }
+
 }
