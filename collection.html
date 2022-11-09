@@ -13,17 +13,27 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg sticky-top bg-dark">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+        <button class="navbar-toggler togglebtn text-white m-0 ms-2" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_107_495)">
+                    <path d="M4 8H20" stroke="#EFEEE0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M4 16H20" stroke="#EFEEE0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_107_495">
+                        <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </button>
         <img class="navbar-brand" src="images/icon.svg" alt="icon">
-        <div class="search">
+        <div class="search w-50 me-3">
             <img src="images/search.svg" alt="search">
             <input class="search2 border-0 ms-2" type="text" name="" id="" placeholder="Search">
         </div>
-        <button class="navbar-toggler togglebtn text-white m-0" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
     
         <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="navbarTogglerDemo02">
             <div class="offcanvas-header">
@@ -33,11 +43,11 @@
             <div class="offcanvas-body" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item d-flex gap-2">
-                        <img src="images/home.svg" alt="home">
+                        <img src="images/home2.svg" alt="home2">
                         <a href="index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item d-flex gap-2">
-                        <img src="images/playlist.svg" alt="playlist">
+                        <img src="images/playlist2.svg" alt="playlist2">
                         <a href="collection.html" class="nav-link">My collections</a>
                     </li>
                     <li class="nav-item d-flex gap-2">
@@ -60,6 +70,7 @@
             </div>
         </div>
     </nav>
+
     
     <nav class="nav-pc d-flex flex-row align-items-center">
         <div class="d-flex gap-3">
@@ -93,8 +104,8 @@
             </div>
         </aside>
 
-        <div class="main min-vh-100">
-            <div class="d-block d-lg-flex gap-2">
+        <div class="main">
+            <div class="d-block d-lg-flex gap-2 ms-5">
                 <button class="btn btn-sm btn-yellow">My collection</button>
                 <button class="btn btn-sm btn-outline-yellow">Likes</button>
             </div>
