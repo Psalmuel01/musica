@@ -13,44 +13,51 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg sticky-top bg-dark">
         <img class="navbar-brand" src="images/icon.svg" alt="icon">
-        <div class="">
+        <div class="search">
             <img src="images/search.svg" alt="search">
             <input class="search2 border-0 ms-2" type="text" name="" id="" placeholder="Search">
         </div>
-        <button class="navbar-toggler togglebtn m-0" type="button" data-bs-toggle="collapse"
+        <button class="navbar-toggler togglebtn text-white m-0" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item d-flex gap-2">
-                    <img src="images/home.svg" alt="home">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item d-flex gap-2">
-                    <img src="images/playlist.svg" alt="playlist">
-                    <a href="collection.html" class="nav-link">My collections</a>
-                </li>
-                <li class="nav-item d-flex gap-2">
-                    <img src="images/radio.svg" alt="radio">
-                    <a href="" class="nav-link">Radio</a>
-                </li>
-                <li class="nav-item d-flex gap-2">
-                    <img src="images/videos.svg" alt="videos">
-                    <a href="" class="nav-link">Music videos</a>
-                </li>
-                <li class="nav-item d-flex gap-2">
-                    <img src="images/profile.svg" alt="profile">
-                    <a href="" class="nav-link">Profile</a>
-                </li>
-                <li class="nav-item d-flex gap-2">
-                    <img src="images/logout.svg" alt="logout">
-                    <a href="" class="nav-link">Log out</a>
-                </li>
-            </ul>
+    
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="navbarTogglerDemo02">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+    
+            <div class="offcanvas-body" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item d-flex gap-2">
+                        <img src="images/home.svg" alt="home">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item d-flex gap-2">
+                        <img src="images/playlist.svg" alt="playlist">
+                        <a href="collection.html" class="nav-link">My collections</a>
+                    </li>
+                    <li class="nav-item d-flex gap-2">
+                        <img src="images/radio.svg" alt="radio">
+                        <a href="" class="nav-link">Radio</a>
+                    </li>
+                    <li class="nav-item d-flex gap-2">
+                        <img src="images/videos.svg" alt="videos">
+                        <a href="" class="nav-link">Music videos</a>
+                    </li>
+                    <li class="nav-item d-flex gap-2">
+                        <img src="images/profile.svg" alt="profile">
+                        <a href="" class="nav-link">Profile</a>
+                    </li>
+                    <li class="nav-item d-flex gap-2">
+                        <img src="images/logout.svg" alt="logout">
+                        <a href="" class="nav-link">Log out</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     
@@ -86,13 +93,13 @@
             </div>
         </aside>
 
-        <div class="collection">
-            <div class="d-flex gap-2">
+        <div class="main min-vh-100">
+            <div class="d-block d-lg-flex gap-2">
                 <button class="btn btn-sm btn-yellow">My collection</button>
                 <button class="btn btn-sm btn-outline-yellow">Likes</button>
             </div>
         
-            <div class="mt-4 d-flex gap-3">
+            <div class="mt-4 d-flex flex-column flex-lg-row gap-3">
                 <div class="album position-relative">
                     <img src="images/col1.svg" alt="col1" class="album-img">
                     <div class="position-absolute bottom-0 p-2">
@@ -125,7 +132,7 @@
         </div>
     </div>
 
-    <div class="player p-2 d-flex justify-content-center gap-5 align-items-center sticky-bottom">
+    <div class="player mt-4 p-2 d-flex justify-content-center gap-5 align-items-center sticky-bottom">
         <div class="d-flex d-lg-row align-items-center">
             <img src="images/playing.svg" alt="">
             <div>
