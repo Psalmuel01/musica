@@ -37,34 +37,34 @@
 
         <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="navbarTogglerDemo02">
             <div class="offcanvas-header">
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
             </div>
 
             <div class="offcanvas-body" id="navbarTogglerDemo02">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item d-flex gap-2">
                         <img src="images/home.svg" alt="home">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="index.html" class="nav-link ms-3">Home</a>
                     </li>
                     <li class="nav-item d-flex gap-2">
                         <img src="images/playlist.svg" alt="playlist">
-                        <a href="collection.html" class="nav-link">My collections</a>
+                        <a href="collection.html" class="nav-link ms-3">My collections</a>
                     </li>
                     <li class="nav-item d-flex gap-2">
                         <img src="images/radio.svg" alt="radio">
-                        <a href="" class="nav-link">Radio</a>
+                        <a href="" class="nav-link ms-3">Radio</a>
                     </li>
                     <li class="nav-item d-flex gap-2">
                         <img src="images/videos.svg" alt="videos">
-                        <a href="" class="nav-link">Music videos</a>
+                        <a href="" class="nav-link ms-3">Music videos</a>
                     </li>
                     <li class="nav-item d-flex gap-2">
                         <img src="images/profile.svg" alt="profile">
-                        <a href="" class="nav-link">Profile</a>
+                        <a href="" class="nav-link ms-3">Profile</a>
                     </li>
                     <li class="nav-item d-flex gap-2">
                         <img src="images/logout.svg" alt="logout">
-                        <a href="" class="nav-link">Log out</a>
+                        <a href="" class="nav-link ms-3">Log out</a>
                     </li>
                 </ul>
             </div>
@@ -307,7 +307,7 @@
     <div class="player mt-4 p-2 d-flex justify-content-center gap-5 align-items-center sticky-bottom">
         <div class="d-flex d-lg-row align-items-center gap-3">
             <img id="poster" class="w-25" src="images/img7.svg" alt="">
-            <div class="lh-lg" id="title">
+            <div class="lh-lg ms-2 ms-lg-0" id="title">
                 <p>You're Only Single</p>
                 <p class="small">Johnny Drille</p>
             </div>
@@ -331,6 +331,9 @@
         <div class="d-none d-lg-flex gap-3">
             <img src="images/volume.svg" alt="volume">
             <input type="range" min="0" max="100" value="30" id="vol">
+            <!-- <i class="fa-solid fa-volume"></i> -->
+            <!-- <i class="fa-solid fa-volume-xmark"></i> -->
+            <!-- <i class="fa-solid fa-volume-high"></i> -->
             <!-- effect special icons here for mute(=0) and too loud (>50) -->
         </div>
     </div>
