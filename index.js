@@ -54,7 +54,7 @@ const songs = [
     {
         id: "9",
         songName: `<p class="mt-3">Never Enough</p>
-                    <p class="small">Unknown</p>`,
+                    <p class="small">Loren Allred</p>`,
         poster: "images/img9.svg"
     },
     {
@@ -194,11 +194,18 @@ music.addEventListener("ended", ()=>{
     play.classList.remove("fa-circle-pause")
 })
 
-
-
 let vol = document.getElementById("vol")
 
 vol.addEventListener("change", ()=>{
+
+    if (vol.value == 0) {
+        vol_icon.classList.add('fa-volume-xmark')
+        vol_icon.classList.remove('fa-volume-high')
+    }
+    if (vol.value > 0) {
+        vol_icon.classList.remove('fa-volume-xmark')
+        vol_icon.classList.add('fa-volume-high')
+    }
     
     let volLevel = vol.value
     music.volume = volLevel/100
@@ -207,6 +214,7 @@ vol.addEventListener("change", ()=>{
 
 let back = document.getElementById("back")
 let next = document.getElementById("next")
+let shuffle = document.getElementById("shuffle")
 
 back.addEventListener("click", ()=>{
     index -= 1
@@ -225,7 +233,7 @@ back.addEventListener("click", ()=>{
 next.addEventListener("click", ()=>{
     index -= 0
     index += 1
-    console.log(index);
+    // console.log(index);
     if (index > Array.from(document.getElementsByClassName("song-list")).length) {
         console.log(index);
         index = 1
@@ -239,5 +247,25 @@ next.addEventListener("click", ()=>{
     Array.from(document.getElementsByClassName("charts-list"))[`${index-1}`].style.background = "rgb(105, 105, 170, .1)"
 })
 
+shuffle.addEventListener("click", ()=>{
+    let random = Math.floor(Math.random() * songs.length-1)
+    // console.log(random);
+    music.src = `music/${random}.mp3`
+    poster.src = `images/img${random}.svg`
+    music.play()
+    title.innerHTML = songs[random-1].songName
 
+    makeAllBackgrounds()
+    Array.from(document.getElementsByClassName("charts-list"))[`${random-1}`].style.background = "rgb(105, 105, 170, .1)"
+})
 
+// let tunelist = document.getElementById("tunelist")
+
+// console.log(tunelist);
+
+// tunelist.forEach(tune => {
+//     tune.addEventListener("click", () => {})
+// })
+
+//make all html in a single page and use javascript to automatically update the details of the tunes
+//also, playlist only for viewing files, not playing sound
