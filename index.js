@@ -269,3 +269,69 @@ shuffle.addEventListener("click", ()=>{
 
 //make all html in a single page and use javascript to automatically update the details of the tunes
 //also, playlist only for viewing files, not playing sound
+//make search function
+
+
+const filterr = document.getElementById("filterr");
+const listItems = []
+
+filterr.addEventListener("input", (e) => filterData(e.target.value));
+
+charts = document.getElementsByClassName("charts-list")
+var li = document.createElement("li");
+
+for (let i = 0; i < charts.length; i++) {
+
+    listItems.push(charts[i].innerText);
+    listItems.style.display = "none";
+
+    var li = document.createElement("li");
+
+    li.appendChild(document.createTextNode(listItems[i]));
+    ul.appendChild(li);
+}
+
+console.log(listItems);
+
+function filterData(searchTerm, i) {
+    listItems.forEach(item => {
+        if (item.toLowerCase().includes(searchTerm.toLowerCase())) {
+        // item.style.display="block"
+        console.log("available");
+    } else {
+        // item.classList.add('hide')
+        // item.style.display = "none";
+        console.log("unavailable");
+        }
+    })
+}
+
+// var ul = document.getElcementById("ul");
+// var li = document.createElement("li");
+// li.appendChild(document.createTextNode(text));
+// ul.appendChild(li);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -246,6 +246,10 @@ input {
     outline: 0;
 }
 
+hide {
+    display: none;
+}
+
 
 /* Media queries */
 
