@@ -1,4 +1,4 @@
 # musica
 
 Live Site:
-https://musica-jay.netlify.app/
+https://psalmuel01.github.io/musica
